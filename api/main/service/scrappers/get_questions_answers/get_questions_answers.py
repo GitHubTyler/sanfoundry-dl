@@ -34,9 +34,9 @@ def get_questions_answers(url):
         options.add_argument("--no-sandbox")
         options.add_argument(f'user-agent={user_agent}')
 
-        # These are for manual driver locations
-        # chrome_driver_location = Service(r"api/main/helpers/drivers/chromedriver")
-        # browser = webdriver.Chrome(options = options, service = chrome_driver_location)
+         These are for manual driver locations
+         chrome_driver_location = Service(r"api/main/helpers/drivers/chromedriver")
+         browser = webdriver.Chrome(options = options, service = chrome_driver_location)
 
         # These are for automatic driver locations (for Heroku)
         # chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
